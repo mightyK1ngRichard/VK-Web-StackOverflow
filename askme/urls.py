@@ -11,4 +11,5 @@ urlpatterns = [
     path('login', login, name='login'),
     path('signup', signup, name='signup'),
     path('tag/<str:tag>', tag_list, name='tag_list'),
+    path('hot', hot_list, name='hot_list'),
 ]

@@ -33,9 +33,9 @@
                 <div class="col-8">
                     <p>
                         Tags:
-                        <a href="/tag/python">Python</a>
-                        <a href="/tag/web">Web</a>
-                        <a href="/tag/html">HTML</a>
+                        {% for tag in question.tags %}
+                            <a href="{% url "tag_list" tag.name %}">{{ tag.name }}</a>
+                        {% endfor %}
                     </p>
                 </div>
             </div>
