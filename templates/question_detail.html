@@ -1,13 +1,11 @@
 {% load static %}
 
-<div class="question-item mt-4 col-11">
+<div class="own-question mt-4 col-11">
     <div class="question-body row">
         <div class="question-left col-2">
             <div class="question-avatar">
-                <img src="{{ question.author_img }}"
-                     class="rounded avatar-img"
-                     alt="user avatar"
-                >
+                <img src="{{ question.author_img }}" class="rounded avatar-img"
+                     alt="user avatar">
             </div>
             <div class="col-12 mt-3">
                 <div class="btn-group d-flex justify-content-between" role="group" aria-label="Rating">
@@ -25,12 +23,12 @@
         </div>
         <div class="question-right col-9">
             <div class="question-right-text">
-                <h3><a href="{% url 'question' 2 %}">{{ question.title }}</a></h3>
+                <h3>{{ question.title }}</h3>
                 <p>{{ question.content }}</p>
             </div>
             <div class="question-right-footer row">
                 <div class="col-3">
-                    <a href="/question/1">Answers (3)</a>
+                    Answers (3)
                 </div>
                 <div class="col-8">
                     <p>
