@@ -21,6 +21,13 @@
     object-fit: cover;
 }
 
+.user-avatar-nav {
+    height: 70px;
+    width: 70px;
+    border: 1px solid gray;
+    object-fit: cover;
+}
+
 .answer-text {
     margin-left: 10px;
 }

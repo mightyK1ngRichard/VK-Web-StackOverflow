@@ -26,10 +26,25 @@
                            aria-label="Search">
                 </form>
 
-                <div class="text-end">
-                    <a type="button" href="{% url 'login' %}"
-                       class="btn btn-outline-light me-2">Войти</a>
-                    <a type="button" href="{% url 'signup' %}" class="btn btn-primary">Регистрация</a>
+                <div class="navbar-nav mb-0 mb-md-0 me-2">
+                    <div class="">
+                        <a class="user-img" href="#">
+                            <img src="{% static "img/spider.jpg" %}" class="user-avatar-nav rounded"
+                                 alt="your avatar">
+                        </a>
+                    </div>
+                </div>
+                <div class="">
+                    <a class="user-name nav-link active" href="#">UserName</a>
+
+                    <div class="row user-options p-1">
+                        <div class="col-6">
+                            <a class="user-settings link-light" href="{% url "settings" %}">Settings</a>
+                        </div>
+                        <div class="col-6">
+                            <a class="user-logout link-light" href="#">Log out</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

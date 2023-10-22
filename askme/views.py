@@ -24,7 +24,7 @@ def index(request):
 
 
 def ask_question(request):
-    return render(request, 'ask_question.html')
+    return render(request, 'ask.html')
 
 
 def settings(request):
