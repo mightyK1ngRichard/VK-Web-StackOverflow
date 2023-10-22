@@ -3,6 +3,11 @@
     border: 2px solid black;
 }
 
+.navbar-brand img {
+    width: 30px;
+    height: 30px;
+}
+
 .answer {
     border-radius: 4px;
     padding: 20px 15px 15px;
