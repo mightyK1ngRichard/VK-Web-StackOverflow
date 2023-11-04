@@ -4,7 +4,7 @@
 {% block content %}
     {% include 'question_detail.html' %}
     <hr/>
-    {% for answer in question.answers %}
+    {% for answer in answers %}
         {% include 'answer_item.html' %}
     {% endfor %}
 

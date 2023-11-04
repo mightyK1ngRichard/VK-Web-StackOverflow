@@ -72,19 +72,16 @@ WSGI_APPLICATION = 'StackOverflow.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'StackOverflow',
-#         'USER': 'mightyK1ngRichard',
-#         'PASSWORD': 'mightyK1ngRichard',
-#         'HOST': 'localhost',
-#         'PORT': '5555',
-#         'OPTIONS': {
-#             'options': '-c search_path=stack_overflow'
-#         }
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'StackOverflow',
+        'USER': 'mightyK1ngRichard',
+        'PASSWORD': 'mightyK1ngRichard',
+        'HOST': 'localhost',
+        'PORT': '5555',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
