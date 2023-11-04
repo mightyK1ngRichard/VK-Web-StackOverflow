@@ -4,7 +4,7 @@
     <div class="question-body row">
         <div class="question-left col-2">
             <div class="question-avatar">
-                <img src="{{ question.author_img }}"
+                <img src="{{ question.creator.avatar }}"
                      class="rounded avatar-img"
                      alt="user avatar"
                 >
@@ -15,7 +15,7 @@
                         <button type="button" class="btn-minus btn btn-outline-dark btn-sm">-</button>
                     </div>
                     <div class="">
-                        {{ question.rating }}
+                        {{ question.summary_rating }}
                     </div>
                     <div class="">
                         <button type="button" class="btn-plus btn btn-outline-dark btn-sm">+</button>
@@ -26,7 +26,7 @@
         <div class="question-right col-9">
             <div class="question-right-text">
                 <h3><a href="{% url 'question' question.id %}">{{ question.title }}</a></h3>
-                <p>{{ question.content|truncatechars:400 }}</p>
+                <p>{{ question.text|truncatechars:400 }}</p>
             </div>
             <div class="question-right-footer row">
                 <div class="col-3">
@@ -35,7 +35,7 @@
                 <div class="col-8">
                     <p>
                         Tags:
-                        {% for tag in question.tags %}
+                        {% for tag in question.tag.all %}
                             <a href="{% url "tag_list" tag.name %}">{{ tag.name }}</a>
                         {% endfor %}
                     </p>

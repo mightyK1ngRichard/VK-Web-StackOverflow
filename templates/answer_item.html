@@ -4,7 +4,7 @@
     <div class="answer-body row">
         <div class="answer-left col-2">
             <div class="answer-avatar">
-                <img src="{% static "img/spider.jpg" %}" class="rounded avatar-img"
+                <img src="{{ answer.creator.avatar }}" class="rounded avatar-img"
                      alt="user avatar">
             </div>
             <div class="col-12 mt-3">
@@ -13,7 +13,7 @@
                         <button type="button" class="btn-minus btn btn-outline-dark btn-sm">-</button>
                     </div>
                     <div class="">
-                        {{ answer.rating }}
+                        {{ answer.summary_rating }}
                     </div>
                     <div class="">
                         <button type="button" class="btn-plus btn btn-outline-dark btn-sm">+</button>
@@ -23,7 +23,7 @@
         </div>
         <div class="answer-right col-9">
             <div class="answer-right-text">
-                <p>{{ answer.content }}</p>
+                <p>{{ answer.text }}</p>
             </div>
             <div class="answer-right-footer">
                 <input class="form-check-input" type="checkbox" value="" id="CorrectFirst" disabled>
