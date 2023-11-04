@@ -6,3 +6,4 @@
 ### Ветки:
 - [X] [Task 1](https://github.com/mightyK1ngRichard/VK-Web-StackOverflow/tree/homework/task01-layout)
 - [X] [Task 2](https://github.com/mightyK1ngRichard/VK-Web-StackOverflow/tree/homework/task02-routing)
+- [X] [Task 3](https://github.com/mightyK1ngRichard/VK-Web-StackOverflow/tree/homework/task03-database)
