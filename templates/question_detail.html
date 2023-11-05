@@ -1,4 +1,5 @@
 {% load static %}
+{% load askme_tags %}
 
 <div class="own-question mt-4 col-11">
     <div class="question-body row">
@@ -28,7 +29,7 @@
             </div>
             <div class="question-right-footer row">
                 <div class="col-3">
-                    Answers (3)
+                    Answers ({% get_count_answer question.id %})
                 </div>
                 <div class="col-8">
                     <p>
